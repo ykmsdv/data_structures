@@ -44,3 +44,4 @@ Then, I cleaned the extra characters:
 
 Last, after updating the 'address' variable with the clean address text, I saved all addresses in a new file, each address on a new line.
 
+###### Note: Updated to save the addresses into a JSON 
