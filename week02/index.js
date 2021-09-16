@@ -9,7 +9,8 @@ const content = fs.readFileSync('data/aa-3.txt', 'utf-8');
 const $ = cheerio.load(content);
 
 
-let addresses = '';
+let addresses = [];
+
 $('form + table tbody tr > td:first-child').each(function(i, elem) {
     
     let $el = $(elem);
@@ -20,13 +21,14 @@ $('form + table tbody tr > td:first-child').each(function(i, elem) {
     address = address.replace(/(\r\n|\n|\t|\r)/gm, "");
     // console.log(address);
 
-    addresses += address + '\n';
+    addresses.push(address);
 });
 
 // remove last new line
-addresses = addresses.replace(/\n$/, '');
+// addresses = addresses.replace(/\n$/, '');
+
 
 // check how many addresses
-console.log(addresses.split('\n').length);
+console.log('number of extracted addresses: ', addresses.length);
 
-fs.writeFileSync('data/addresses-03.txt', addresses);
+fs.writeFileSync('data/addresses-03.json', JSON.stringify(addresses, null, 2));
