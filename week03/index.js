@@ -109,7 +109,7 @@ function getLatLon(addresses) {
         setTimeout(callback, 2000);
 
     }, function() {
-        // write the file with the formatted addresses + lat and long (from the meetingsData arrat)
+        // write the file with the formatted addresses and API's clean address + lat and long (from the meetingsData array)
         fs.writeFileSync('data/addresses-lat-lon-03.json', JSON.stringify(meetingsData));
         console.log('*** *** *** *** ***');
         console.log(`Number of meetings in this zone: ${meetingsData.length}`);
