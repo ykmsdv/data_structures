@@ -1,0 +1,19 @@
+{
+  "name": "dynamo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "node create_collection.js",
+    "query": "node query.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yoana Kosturska",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1007.0"
+  },
+  "devDependencies": {
+    "async": "^3.2.1"
+  }
+}
