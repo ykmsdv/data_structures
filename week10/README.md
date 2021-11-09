@@ -17,9 +17,9 @@ Design three interfaces for visualizations for your three data sources (AA, proc
 
 *Wishlist: A button to filter all meetings in the next two hours for cases when the user wants to visit a meeting ASAP and does not have preferences for any other filters.
 
-![](aa-01.PNG)
-![](aa-02.PNG)
-![](aa-03.PNG)
+![](aa-01.png)
+![](aa-02.png)
+![](aa-03.png)
 
 - How will the data need to be mapped to the visual elements? *Data maps to the filters and the filters map to the visualization.*
 
@@ -35,7 +35,7 @@ Design three interfaces for visualizations for your three data sources (AA, proc
 ##### Process Blog
 - What will the visualization look like? Will it be interactive? If so, how? *The data is represented as small multiple radar charts - one for each day I collected data for. They are distributed in 3 columns - one Monday, Tuesday and Wednesday, and 4 rows for each week.*
 
-![](process_blog.PNG)
+![](process_blog.png)
 
 - For that mapping, what needs to be done to the data? Be specific and clear. Will it require filtering, aggregation, restructuring, and/or something else? How will this be done? *Each radar chart will take the data filtered by the day it represents.*
 
@@ -45,7 +45,7 @@ Design three interfaces for visualizations for your three data sources (AA, proc
 ##### Sensor data
 - What will the visualization look like? Will it be interactive? If so, how? *The data is represented as a grouped bar chart - average temperature at night and percent deep sleep.*
 
-![](sensors.PNG)
+![](sensors.png)
 
 - How will the data need to be mapped to the visual elements? *The two variables are using different axis, the one on the left represents the temperature, and the one on the right - the percent deep sleep*
 
