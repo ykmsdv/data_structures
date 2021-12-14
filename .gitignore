@@ -1,3 +1,5 @@
 .DS_Store
 week02/.gitignore
 week03/.gitignore
+final-projects/aa-meetings-final/backend/server/.env
+.gitignore
